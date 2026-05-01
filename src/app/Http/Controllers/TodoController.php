@@ -20,7 +20,7 @@ class TodoController extends Controller
         $todo = new Todo();
         $todos = $todo->all();
 
-        return view('todo.create', ['todos' => $todos]); 
+        return view('todo.create'); 
     }
 
     public function store(Request $request)
